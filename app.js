@@ -13,7 +13,7 @@ function onReady() {
     let newLi = document.createElement('li');
 
     // create new input;
-    let checkbox = documet.createElement('input');
+    let checkbox = document.createElement('input');
 
     // set the input type to checkbox
     checkbox.type = "checkbox";
