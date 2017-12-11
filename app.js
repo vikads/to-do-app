@@ -4,7 +4,7 @@ function onReady() {
   const toDoList = document.getElementById('toDoList');
 
   addToDoForm.addEventListener('submit', event => {
-    event.preventDeafault();
+    event.preventDefault();
 
     // get the text;
     let title = newToDoText.value;
@@ -24,8 +24,14 @@ function onReady() {
     // attach the checkbox to the li
     newLi.appendChild(checkbox);
 
+    // attach the li to the ul
+    toDoList.appendChild(newLi);
+
+    // empty the input
+    newToDoText.value = '';
+
   });
-}
+};
 
 
 window.onload = function() {
